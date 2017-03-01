@@ -1,0 +1,3 @@
+NOTE:
+
+This is a project for a web design course.  None of these maps are actually for sale and all were created with http://donjon.bin.sh/

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <meta charset="UTF-8" name="author" content="Marcus Strahl">
+    <link rel="stylesheet" href="..\css\sheet1.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1>Mapcart</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="..\index.html">Home</a>
+          </li>
+          <li>
+            <a href="..\shop\shop.html">Shop</a>
+          </li>
+          <li>
+            <a href="..\contact\contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <table>
+        <tr>
+          <td>
+            <h2>Checkout</h2>
+            <form action="#" method="get" name="signUp" id="signUp">
+              <section id="SectionOne">
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <label for="name1">First Name</label>
+                  <input type="text" name="name1" id="name1" required autofocus placeholder="Steve"><br>
+                  <label for="name2">Last Name</label>
+                  <input type="text" name="name2" id="name2" required placeholder="Smith"><br>
+                  <label for="state">State</label>
+                  <input type="text" name="state" id="state" required placeholder="2-letter abbreviation" maxlength="2"><br>
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" required placeholder="Placetown"><br>
+                  <label for="zip">Zip Code</label>
+                  <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}([\-]\d{4})?"><br>
+                  <label for="phone">Phone</label>
+                  <input type="tel" name="phone" id="phone" required placeholder="###-###-####" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be ###-###-#### format"><br>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required placeholder="address@website.com"><br>
+                </fieldset>
+                <fieldset>
+                  <legend>Credit Card Information</legend>
+                  <label for="cardNumber">Credit Card Number</label>
+                  <input type="text" name="cardNo" id="cardNo" required placeholder="####-####-####-####" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$"><br>
+                  <label for="secCode">Security Code</label>
+                  <input type="text" name="secCode" id="secCode" required placeholder="###" pattern="\d{3}"><br>
+                  <label for="expDate">Expiration Date</label>
+                  <input type="date" name="expDate" id="expDate" required><br>
+                </fieldset>
+                <fieldset id="mapColor">
+                  <legend>Map Type</legend>
+                  Color ($5.00)
+                  <input type="radio" name="mapColor" value="color" id="radio"><br>
+                  Sepia ($2.50)
+                  <input type="radio" name="mapColor" value="sepia" id="radio">
+                </fieldset>
+                <fieldset id="buttons">
+                  <input type="submit" id="submit" value="Submit">
+                  <input type="reset" id="reset" value="Reset"><br>
+                </fieldset>
+              </section>
+            </form>
+          </td>
+          <td>
+            <img src=..\images\1f.png alt="Southern Shore with Arctic at the bottom">
+            <p>Southern Tundra</p>
+            <p id="checkoutImg">2000 x 1000</p>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p class="copy-info">&copy; Marcus Strahl, 2017</p>
+      <p>
+        Note: This website is a project for a web design course.  None of these maps are actually for sale and all were created with
+        <a href="http://donjon.bin.sh/fantasy/world/">http://donjon.bin.sh/fantasy/world/</a>
+      </p>
+    </footer>
+  </body>
+</html>

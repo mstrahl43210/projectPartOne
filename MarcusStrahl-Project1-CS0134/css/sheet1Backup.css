@@ -1,0 +1,208 @@
+a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+body {
+  background-color: ghostwhite;
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+  font-family: serif;
+}
+
+p {text-align: center;}
+
+img {
+  border: 2px solid black;
+  display: flex;
+  animation: slideshow 10s infinite alternate;
+}
+
+@keyframes slideshow {
+  0% {filter: sepia(100);}
+  50% {filter: sepia(0);}
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 10px;
+}
+
+td > p {
+  text-align: center;
+}
+
+legend {
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
+
+fieldset {
+  justify-content: center;
+  text-align: right;
+  border-style: outset;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+header {
+  width: 96.875%;
+
+  background-color: slategray;
+  border: 2px solid black;
+  text-align: center;
+  font-variant: small-caps;
+  border-radius: 10px;0
+}
+
+header > h1 {
+  color: white;
+  text-shadow: black 2px 1px;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  width: 96.875%;
+  padding: 15px 1.5625%;
+  font-size: 10px;
+  text-align: left;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+}
+
+footer > ul > li {
+  padding-left: 5px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul li {
+  flex: 15;
+  text-align: center;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: maroon;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: font-size .1s ease-out .1s, color .1s ease-in .1s;
+}
+
+nav > ul li a:hover {
+  color: white;
+  cursor: pointer;
+  font-size: 130%;
+}
+
+input, select {
+  width: 15em;
+  height: 2em;
+  font-size: 15px;
+  margin-left: .5em;
+  margin-bottom: .5em;
+  border-radius: 50px;
+}
+
+form {
+  display: flex;
+  height: 10;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+input:valid {
+  border: 1px solid black;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+#buttons {
+  border: none;
+  text-align: center;
+}
+
+#buttons input {
+  border: 2px solid black;
+  width: 10em;
+  height: 2em;
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  background-color: orange;
+  cursor: pointer;
+  transition: border .1s ease-in .1s, color .1s ease-in .1s, width .1s ease-in .1s, height .1s ease-in .1s;
+}
+
+#buttons input:hover {
+  border: 2px solid green;
+  color: green;
+  width: 10.2em;
+  height: 2.2em;
+}
+
+#radio {
+  font-size: 7px;
+  width: 15px;
+  cursor: pointer;
+}
+
+#messagetext {
+  text-align: left;
+}
+
+#message {
+  height: 8em;
+  width: 30em;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+#checkoutImg {
+  margin-bottom: 100%;
+}
+
+#currentPageLink {
+  color: black;
+  cursor: default;
+  font-size: 120%;
+}
+
+#currentPageLink:hover {
+  color: black;
+  cursor: default;
+  font-size: 120%;
+}
+
+#leftAlign {
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 150%;
+  }
+}
